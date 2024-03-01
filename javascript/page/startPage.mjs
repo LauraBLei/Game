@@ -1,6 +1,8 @@
-import { showCurrentImage } from "../components/charachterWheel.mjs"
+import { showCurrentImage, showNextImage, showPreviousImage } from "../components/charachterWheel.mjs"
 
 export const startPage = () => {
+    let main = document.querySelector('main')
+    main.innerHTML = '';
     makePage()
     showCurrentImage()
 }
@@ -22,15 +24,18 @@ const makePage = () => {
         window.location.href = "#/startingPoint/index.html"
     })
 
-    let rouletteDiv = document.createElement("div")
+    let carouselDiv = document.createElement("div")
+    carouselDiv.classList.add("carouselDiv")
 
     let backButton = document.createElement("p")
     backButton.classList.add("fa-solid", "fa-caret-left", "backButton")
     backButton.id = "prevButton"
+    backButton.addEventListener('click', () => showPreviousImage())
 
     let nextButton = document.createElement("p")
     nextButton.classList.add("fa-solid", "fa-caret-right", "nextButton")
     nextButton.id = "nextButton"
+    nextButton.addEventListener('click', () => showNextImage())
 
     let carouselContainer = document.createElement("div")
     carouselContainer.classList.add("carouselContainer")
@@ -44,7 +49,7 @@ const makePage = () => {
     main.appendChild(box)
     box.append(playDiv, characterDiv)
     playDiv.appendChild(playButton)
-    characterDiv.append(rouletteDiv, h2)
-    rouletteDiv.append(backButton, carouselContainer, nextButton)
+    characterDiv.append(h2, carouselDiv)
+    carouselDiv.append(backButton, carouselContainer, nextButton)
 
 }
