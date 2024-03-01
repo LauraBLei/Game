@@ -22,7 +22,7 @@ export const characters = [
         class: "Sorcerer",
         weapon: "Staff",
         image: {
-            src:"../../pictures/femaleSorcerer.png",
+            src:"/pictures/femaleSorcerer.png",
             alt: "Picture of a female Sorcerer"
         }
     },
