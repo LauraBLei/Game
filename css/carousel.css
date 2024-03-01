@@ -1,0 +1,9 @@
+.imageCarouselBox{
+    width: 300px;
+    height: 500px;
+    overflow: hidden;
+}
+
+.characterCarouselImage{
+    width: 100%;
+}
