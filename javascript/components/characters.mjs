@@ -13,7 +13,7 @@ export const characters = [
         class: "Fighter",
         weapon: "Sword",
         image: {
-            src:"../../pictures/femaleFighter.jpg",
+            src:"../pictures/femaleFighter.jpg",
             alt: "Picture of a female fighter"
         }
     },
