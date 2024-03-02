@@ -1,5 +1,5 @@
 :root{
-    --green:#0f3437;
+    --green:#080d28;
     --white: #ffffff;
     --black: #000000; 
     --grey: #6F6F6F;
@@ -21,8 +21,8 @@ body{
 main{
     background-color: var(--green);
     width: 100%;
-    max-width: 1248px;
-    height: 675px;
+    max-width: 1300px;
+    height: 800px;
     margin-top: 150px;
     margin-left: 20px;
     margin-right: 20px;

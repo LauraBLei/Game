@@ -4,8 +4,11 @@ const start = () => {
     router()
 }
 
-start()
+
 
 window.onhashchange = () => {
     router();
+    location.reload()
   };
+
+start()
