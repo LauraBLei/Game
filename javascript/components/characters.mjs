@@ -121,7 +121,7 @@ export const characters = [
         class: "Wizard",
         weapon: "Staff",
         image: {
-            src:"../../pictures/chunkyWizard.png",
+            src:"./pictures/chunkyWizard.png",
             alt: "Picture of a wizard cat"
         }
     },
