@@ -21,7 +21,11 @@ const makePage = () => {
     playButton.innerText = "Play"
     playButton.classList.add("playButton")
     playButton.addEventListener('click', () => {
-        window.location.href = "#/startingPoint/index.html"
+        if(localStorage.getItem('character') === null){
+            alert("You must select a character to continue your journey!")
+        }else{
+            window.location.href = "#/startingPoint/index.html"
+        }
     })
 
     let carouselDiv = document.createElement("div")
