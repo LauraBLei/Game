@@ -4,7 +4,7 @@ export const characters = [
         class: "Archer",
         weapon: "Bow",
         image: {
-            src:"../../pictures/elvenWomanArcher.png",
+            src:"./pictures/elvenWomanArcher.png",
             alt: "Picture of a female elver archer"
         }
     },
@@ -13,7 +13,7 @@ export const characters = [
         class: "Fighter",
         weapon: "Sword",
         image: {
-            src:"../pictures/femaleFighter.jpg",
+            src:"./pictures/femaleFighter.jpg",
             alt: "Picture of a female fighter"
         }
     },
@@ -22,7 +22,7 @@ export const characters = [
         class: "Sorcerer",
         weapon: "Staff",
         image: {
-            src:"/pictures/femaleSorcerer.png",
+            src:"./pictures/femaleSorcerer.png",
             alt: "Picture of a female Sorcerer"
         }
     },
@@ -31,7 +31,7 @@ export const characters = [
         class: "Archer",
         weapon: "Bow",
         image: {
-            src:"../../pictures/humanWomanArcher.png",
+            src:"./pictures/humanWomanArcher.png",
             alt: "Picture of a female Archer"
         }
     },
@@ -40,7 +40,7 @@ export const characters = [
         class: "Dark Knight",
         weapon: "Axe",
         image: {
-            src:"../../pictures/maleDarkKnight.png",
+            src:"./pictures/maleDarkKnight.png",
             alt: "Picture of a dark knight"
         }
     },
@@ -49,7 +49,7 @@ export const characters = [
         class: "Archer",
         weapon: "Bow",
         image: {
-            src:"../../pictures/maleElvenArcher.png",
+            src:"./pictures/maleElvenArcher.png",
             alt: "Picture of a male elven archer"
         }
     },
@@ -58,7 +58,7 @@ export const characters = [
         class: "Mage",
         weapon: "Staff",
         image: {
-            src:"../../pictures/maleMage.png",
+            src:"./pictures/maleMage.png",
             alt: "Picture of a male mage"
         }
     },
@@ -67,7 +67,7 @@ export const characters = [
         class: "Sorcerer",
         weapon: "Staff",
         image: {
-            src:"../../pictures/maleSorcerer.png",
+            src:"./pictures/maleSorcerer.png",
             alt: "Picture of a male sorcerer"
         }
     },
@@ -76,7 +76,7 @@ export const characters = [
         class: "Ninja",
         weapon: "longsword",
         image: {
-            src:"../../pictures/ninjaMale.png",
+            src:"./pictures/ninjaMale.png",
             alt: "Picture of a ninja"
         }
     },
@@ -85,7 +85,7 @@ export const characters = [
         class: "Wizard",
         weapon: "Staff",
         image: {
-            src:"../../pictures/oldWizard.png",
+            src:"./pictures/oldWizard.png",
             alt: "Picture of a wizard"
         }
     },
@@ -94,7 +94,7 @@ export const characters = [
         class: "Knight",
         weapon: "Paws",
         image: {
-            src:"../../pictures/sirPog.png",
+            src:"./pictures/sirPog.png",
             alt: "Picture of a dog in armor"
         }
     },
@@ -103,7 +103,7 @@ export const characters = [
         class: "knight",
         weapon: "Sword",
         image: {
-            src:"../../pictures/womanKnight.png",
+            src:"./pictures/womanKnight.png",
             alt: "Picture of a female knight"
         }
     },
@@ -112,7 +112,7 @@ export const characters = [
         class: "Samurai",
         weapon: "Katana",
         image: {
-            src:"../../pictures/womanSamurai.png",
+            src:"./pictures/womanSamurai.png",
             alt: "Picture of a female samurai"
         }
     },
