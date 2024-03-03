@@ -8,6 +8,9 @@ export const updateLocationPathOne = (nameOfLocation) => {
   story.innerText = '' 
   story.innerText = pathOne[nameOfLocation].story.replaceAll('{name}', character.name)
 
+  let Location = document.getElementById("nameOfLocation")
+  Location.innerText = pathOne[nameOfLocation].location
+
   let backgroundImage = document.getElementById('pageContainer')
   backgroundImage.style.backgroundImage = `url("${pathOne[nameOfLocation].image.src}")`
 
