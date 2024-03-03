@@ -1,5 +1,6 @@
-import { startingPath } from "../paths/paths.mjs";
-
+import {pathOne } from "../paths/pathOne.mjs";
+import { startingPath } from "../paths/startingPath.mjs";
+import { updateLocationPathOne } from "../paths/updateLocation.mjs";
 export const startingPoint = () => {
     let main = document.querySelector("main")
     main.innerHTML = '';
@@ -13,6 +14,7 @@ const makePage = (character) =>{
 
     let pageContainer = document.createElement('div')
         pageContainer.classList.add('pageContainer')
+        pageContainer.id = "pageContainer"
         pageContainer.style.backgroundImage = `url("${startingPath.image.src}")`
 
     let storyContainer = document.createElement('div')
@@ -34,20 +36,23 @@ const makeStoryContainerContent = (storyContainer, character) => {
     let pathDiv = document.createElement('div')
     pathDiv.classList.add('pathDiv')
     
-    let pathOne = document.createElement('a')
-    pathOne.innerText = startingPath['nextPathsText'][0]
-    pathOne.classList.add('pathButton')
-    pathOne.addEventListener('click', () => window.location.href = "#/path1/index.html")
+    let button1 = document.createElement('a')
+    button1.innerText = startingPath['nextPathsText'][0]
+    button1.classList.add('pathButton')
+    button1.id = "pathOne"
+    button1.addEventListener('click', (event) => updateLocationPathOne(event.target.innerText))
 
-    let pathTwo = document.createElement('a')
-    pathTwo.innerText = startingPath['nextPathsText'][1]
-    pathTwo.classList.add('pathButton')
-    pathTwo.addEventListener('click', () => window.location.href = "#/path2/index.html")
+    let button2 = document.createElement('a')
+    button2.innerText = startingPath['nextPathsText'][1]
+    button2.classList.add('pathButton')
+    button2.id = "pathTwo"
+    button2.addEventListener('click', (event) => alert("This path is not yet ready for you"))
 
-    let pathThree = document.createElement('a')
-    pathThree.innerText = startingPath['nextPathsText'][2]
-    pathThree.classList.add('pathButton')
-    pathThree.addEventListener('click', () => window.location.href = "#/path3/index.html")
+    let button3 = document.createElement('a')
+    button3.innerText = startingPath['nextPathsText'][2]
+    button3.classList.add('pathButton')
+    button3.id = "pathThree"
+    button3.addEventListener('click', (event) =>  alert("This path is not yet ready for you"))
 
 
     let storyTextBox = document.createElement('div')
@@ -56,14 +61,17 @@ const makeStoryContainerContent = (storyContainer, character) => {
     let storyText = document.createElement('p')
         storyText.innerText = startingPath.story.replace('{name}', character.name)
         storyText.classList.add('storyText')
+        storyText.id = "storyText"
+    
+    let nameOfLocation = document.createElement('h3')
+    nameOfLocation.innerText = startingPath.location
 
-
-    storyContainer.append(storyTextBox, pathDiv)
-    pathDiv.append(pathOne, pathTwo, pathThree)
+    storyContainer.append(nameOfLocation, storyTextBox, pathDiv)
+    pathDiv.append(button1, button2, button3)
     storyTextBox.appendChild(storyText)
 }
 
-const makeInventoryContainerContent = (inventoryContainer, character) => {
+// const makeInventoryContainerContent = (inventoryContainer, character) => {
 
-    inventoryContainer.append()
-}
+//     inventoryContainer.append()
+// }
