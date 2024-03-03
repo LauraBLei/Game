@@ -40,19 +40,19 @@ const makeStoryContainerContent = (storyContainer, character) => {
     button1.innerText = startingPath['nextPathsText'][0]
     button1.classList.add('pathButton')
     button1.id = "pathOne"
-    button1.addEventListener('click', (event) => updateLocationPathOne(event.target.innerText))
+    button1.addEventListener('click', (event) => pathOne[event.target.innerText]? updateLocationPathOne(event.target.innerText): alert("This path is not yet ready for you"))
 
     let button2 = document.createElement('a')
     button2.innerText = startingPath['nextPathsText'][1]
     button2.classList.add('pathButton')
     button2.id = "pathTwo"
-    button2.addEventListener('click', (event) => alert("This path is not yet ready for you"))
+    button2.addEventListener('click', (event) => pathOne[event.target.innerText]? updateLocationPathOne(event.target.innerText): alert("This path is not yet ready for you"))
 
     let button3 = document.createElement('a')
     button3.innerText = startingPath['nextPathsText'][2]
     button3.classList.add('pathButton')
     button3.id = "pathThree"
-    button3.addEventListener('click', (event) =>  alert("This path is not yet ready for you"))
+    button3.addEventListener('click', (event) =>  pathOne[event.target.innerText]? updateLocationPathOne(event.target.innerText): alert("This path is not yet ready for you"))
 
 
     let storyTextBox = document.createElement('div')
